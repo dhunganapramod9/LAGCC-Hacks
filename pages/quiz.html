@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Career Compass Quiz - Discover your ideal STEM career path through our comprehensive assessment designed for asylum seekers">
+    <link href="../css/consolidated.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="../js/main.js"></script>
+    <title>Career Compass - Career Assessment Quiz</title>
+  </head>
+  
+  <body>
+    <header role="banner">
+      <h1>Career Compass</h1>
+      <button class="btn" aria-label="Return to home page">
+        <a href="../index.html">
+          <i class="fas fa-home" aria-hidden="true"></i> Home
+        </a>
+      </button>
+    </header>
+    
+    <hr class="topline">
+    
+    <main role="main">
+      <section class="quiz-header">
+        <h1 id="quiztitle">Which Career or Major is for you?</h1>
+        <img id="stemimg" src="../images/assylee.jpg" alt="Diverse group of asylum seekers in STEM fields" class="responsive-img">
+      </section>
+      
+      <form class="quiz-form" role="form" aria-label="Career assessment questionnaire">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>1. Why are you interested in taking a career test?</strong>
+          </legend>
+          <select id="Q1" class="quiz-select" aria-describedby="q1-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">I want to see what makes the most money</option>
+            <option value="2">I'm scared my current job will not matter in the future</option>
+            <option value="3">I feel lost in choosing a career</option>
+          </select>
+          <small id="q1-help" class="form-help">Choose the option that best describes your motivation</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>2. What are you looking for in your ideal career?</strong>
+          </legend>
+          <select id="Q2" class="quiz-select" aria-describedby="q2-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">Something that suits my personality/hobbies</option>
+            <option value="2">Something that establishes a good work-life balance</option>
+            <option value="3">Something with many employee benefits</option>
+          </select>
+          <small id="q2-help" class="form-help">Think about what matters most to you in your career</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>3. What are some of your strengths?</strong>
+          </legend>
+          <select id="Q3" class="quiz-select" aria-describedby="q3-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">Problem solving, detail-oriented, proficient math & numerical skills</option>
+            <option value="2">Curiosity, logic, creativity, courageous</option>
+            <option value="3">Independent, passion for learning, flexibility</option>
+          </select>
+          <small id="q3-help" class="form-help">Choose the set of strengths that best describes you</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>4. What are some of your hobbies/interests?</strong>
+          </legend>
+          <select id="Q4" class="quiz-select" aria-describedby="q4-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">Playing an instrument/listening to music</option>
+            <option value="2">Cooking/baking</option>
+            <option value="3">Visual arts/writing</option>
+          </select>
+          <small id="q4-help" class="form-help">Select your primary hobby or interest</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>5. How much time are you willing to spend in college?</strong>
+          </legend>
+          <select id="Q5" class="quiz-select" aria-describedby="q5-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">4+ years</option>
+            <option value="2">I'm not worried about how long I spend in college</option>
+            <option value="3">4 years or less</option>
+          </select>
+          <small id="q5-help" class="form-help">Consider your educational timeline preferences</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>6. What is your preference on working independently?</strong>
+          </legend>
+          <select id="Q6" class="quiz-select" aria-describedby="q6-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">I prefer working solo</option>
+            <option value="2">I don't have a preference</option>
+            <option value="3">I work well in teams</option>
+          </select>
+          <small id="q6-help" class="form-help">Think about your preferred work environment</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>7. What do you hope to achieve with your career?</strong>
+          </legend>
+          <select id="Q7" class="quiz-select" aria-describedby="q7-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">I want to improve accessibility for all</option>
+            <option value="2">I want to solve prominent everyday issues in our society</option>
+            <option value="3">I want to maximize my talents and interests</option>
+          </select>
+          <small id="q7-help" class="form-help">Consider your long-term career goals</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>8. How would your perfect workplace be structured?</strong>
+          </legend>
+          <select id="Q8" class="quiz-select" aria-describedby="q8-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">I prefer to work from home</option>
+            <option value="2">I prefer a hands-on, creative workplace</option>
+            <option value="3">I prefer a collaborative workplace with a positive atmosphere</option>
+          </select>
+          <small id="q8-help" class="form-help">Think about your ideal work setting</small>
+        </fieldset>
+        
+        <hr class="question-divider">
+        
+        <fieldset class="question-group">
+          <legend class="quizfont">
+            <strong>9. How much time would you like to spend daily on your job?</strong>
+          </legend>
+          <select id="Q9" class="quiz-select" aria-describedby="q9-help" required>
+            <option value="">Select an option...</option>
+            <option value="1">I prefer a flexible schedule (as long as I get the tasks done)</option>
+            <option value="2">Overall 9-5 job but I would be fine if I went overtime on some days</option>
+            <option value="3">9-5 job with an organized schedule and a bit of flexibility</option>
+          </select>
+          <small id="q9-help" class="form-help">Consider your preferred work schedule</small>
+        </fieldset>
+
+        <div class="quiz-submit">
+          <button type="button" class="submit-btn" onclick="calculate();" aria-label="Calculate quiz results">
+            <i class="fas fa-calculator" aria-hidden="true"></i>
+            Calculate My Results
+          </button>
+        </div>
+        
+      </form>
+    </main>
+    
+    <footer role="contentinfo" class="footer">
+      <p>&copy; 2024 Career Compass. Empowering asylum seekers through STEM education and mentorship.</p>
+    </footer>
+
+  </body>
+</html>

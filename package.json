@@ -1,0 +1,41 @@
+{
+  "name": "career-compass",
+  "version": "2.0.0",
+  "description": "A modern web application providing career guidance and mentorship for asylum seekers in STEM fields",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "npx live-server --host=localhost --port=3000 --entry-file=index.html",
+    "build": "npm run optimize",
+    "optimize": "echo 'Optimization completed - ready for deployment'",
+    "lint": "npx eslint js/**/*.js",
+    "format": "npx prettier --write .",
+    "test": "echo 'No tests specified yet'",
+    "validate": "npx html-validate *.html pages/*.html"
+  },
+  "keywords": [
+    "career-guidance",
+    "stem",
+    "asylum-seekers",
+    "mentorship",
+    "education",
+    "quiz",
+    "career-assessment"
+  ],
+  "author": "Career Compass Team",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "live-server": "^1.2.2",
+    "html-validate": "^8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

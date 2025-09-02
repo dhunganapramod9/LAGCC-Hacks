@@ -1,0 +1,42 @@
+/* ======= CSS CUSTOM PROPERTIES & VARIABLES ======= */
+:root {
+    /* Color Variables */
+    --primary-color: #006994;
+    --secondary-color: #ab78ba;
+    --accent-color: #264348;
+    --text-light: #f0f8ff;
+    --text-dark: #000000;
+    --background-light: #f5fffa;
+    --purple: #800080;
+    --crimson: #dc143c;
+    
+    /* Typography */
+    --font-primary: 'Poppins', sans-serif;
+    --font-coolvetica: 'Coolvetica', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.4s ease;
+    --transition-slow: 0.6s ease;
+    
+    /* Breakpoints */
+    --mobile: 768px;
+    --tablet: 1024px;
+    --desktop: 1200px;
+    
+    /* Z-index scale */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal: 1040;
+    --z-popover: 1050;
+    --z-tooltip: 1060;
+}

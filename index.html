@@ -1,75 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title> Career Compass - Home </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Compass - Home</title>
+  <meta name="description" content="Career Compass - Empowering asylum seekers with personalized career guidance and mentorship in STEM fields">
+  <link href="css/consolidated.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="module" src="js/main.js"></script>
 </head>
 
 <body id="start">
 
-  <header> 
-    <div class ="logo">
-      <a href="#"><img src="logo2(1).png"</span></a>
-  </div>
+  <header role="banner"> 
+    <div class="logo">
+      <a href="#" aria-label="Career Compass Home">
+        <img src="logo2(1).png" alt="Career Compass Logo">
+      </a>
+    </div>
 
-  <div class="navlist">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Connections</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-  </div>
+    <nav class="navlist" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#connections">Connections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <div class="menu">
+    <div class="menu" aria-label="Mobile menu toggle">
       <i class="fas fa-bars"></i>
-  </div></header>
-  
-  
-  <div class="split left">
-    <div class="centered">
-      <h2><a href="quiz.html" id="quiz"> Which Career or Major <br> is for you? </a></h2>
-      <img src="major.png" width="70%" height="60%">
     </div>
-  </div>
+  </header>
+  
+  
+  <main role="main">
+    <section class="split left" id="home">
+      <div class="centered">
+        <h2>
+          <a href="pages/quiz.html" id="quiz" aria-label="Take career assessment quiz">
+            Which Career or Major<br>is for you?
+          </a>
+        </h2>
+        <img src="images/major.png" alt="Career assessment illustration" class="responsive-img">
+      </div>
+    </section>
 
-  <div class="split right">
-    <div class="centered">
-      <h2> Connect with experts<br> & Choose your Path</h2>
-      <img src="Stem Image (1).png" width="55%" height="55%"><br><br>
-      <b><label for="career">Which field are you interested in?</label></b>
-      <select name="career" id="career">
-        <option value="S">Biology</option>
-        <option value="T">Computer Science</option>
-        <option value="M">Mathematics</option>
-      </select>
-      <br><br>
-      <input id="test" type="Submit" value="Submit" onclick="submit();">
+    <section class="split right" id="services">
+      <div class="centered">
+        <h2>Connect with experts<br>& Choose your Path</h2>
+        <img src="images/Stem Image (1).png" alt="STEM careers illustration" class="responsive-img">
+        
+        <form class="career-form" role="form">
+          <label for="career" class="form-label">
+            <strong>Which field are you interested in?</strong>
+          </label>
+          <select name="career" id="career" class="career-select" aria-describedby="career-help">
+            <option value="">Select a field...</option>
+            <option value="S">Biology</option>
+            <option value="T">Computer Science</option>
+            <option value="M">Mathematics</option>
+          </select>
+          <small id="career-help" class="form-help">Choose your area of interest to connect with mentors</small>
+          
+          <button type="button" id="submit-btn" class="submit-btn" onclick="submit();" aria-label="Submit career selection">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section id="about" class="about-section">
+    <h2 id="aboutUs">Mission Statement</h2>
+    <p id="mission">
+      Here at Career Compass, we aim to empower asylum seekers. We hope to help you succeed in STEM.
+      Don't know what to major in? Take our specially designed quiz!
+      Having trouble in your field? Reach out to any of our experts!
+      Our platform guides aspiring innovators to what will suit them best and easily connects them to mentors from all genders and races.
+    </p>
+  </section>
+
+  <section id="connections" class="internships-section">
+    <h2 id="internships">Current Internship Opportunities for Qualified Students:</h2>
+    <div class="internship-grid">
+      <button onclick="CCintern();" class="interntext" aria-label="View CUNY Career Launch Program details">
+        CUNY Career Launch Program Summer 2024
+      </button>
+      
+      <button class="interntext" onclick="MMintern();" aria-label="View MetroPlusHealth internship details">
+        MetroPlusHealth Summer Internship: Telecommunications (New York)
+      </button>
+      
+      <button class="interntext" onclick="MSIntern();" aria-label="View Microsoft research internship details">
+        Research Intern (Microsoft)
+      </button>
+      
+      <button class="interntext" onclick="RefugeeIntern();" aria-label="View refugee resettlement internship details">
+        Refugee Resettlement Intern - Summer 2024
+      </button>
     </div>
-  </div>
-  <br><br>
+  </section>
 
-	<h2 id = "aboutUs"> Mission Statment </h2>
-	<p id="mission"> Here at Career Compass, we aim to empower Assylum Seeker. We hope to help you succeed in STEM. <br> Don't know what to major in? Take our specially designed quiz! <br>Having trouble in your field? Reach out to any of our experts! <br>Our platform guides asipring innovators to what will suit them best and easily connects them to mentors from all genders and races.</p>
-<br>
-
-<center>
-  
-<h2 id="internships"> Current internship opprtunities for Qualified Student: </h2>
-  <button onclick = "CCintern();" class="interntext"> CUNY Career Lunch Program Summer 2024 </button>
-  <br> <br>
-
-  <button class="interntext" onclick="MMintern();"> MetroPlusHealth Summer Internship: Telecommunications (New York) </button>
-  <br><br>
-    
-  <button class="interntext" onclick="MSIntern();"> Research Intern (Microsoft) </button>
-  <br><br>
-  
-  <button class="interntext" onclick="RefugeeIntern();"> Refugee Resettlement Intern - Summer 2024 </button>
-  
-
- </center>
+  <footer role="contentinfo" class="footer">
+    <p>&copy; 2024 Career Compass. Empowering asylum seekers through STEM education and mentorship.</p>
+  </footer>
 </body>

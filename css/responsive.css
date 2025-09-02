@@ -1,0 +1,289 @@
+/* ======= RESPONSIVE DESIGN ======= */
+
+/* Tablet and below (768px) */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: var(--spacing-md) 5%;
+    }
+    
+    .navlist {
+        display: none;
+    }
+    
+    .menu {
+        display: block;
+    }
+    
+    /* Layout adjustments */
+    .split {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .left, .right {
+        position: relative;
+    }
+    
+    .centered {
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: auto;
+        margin: var(--spacing-lg) auto;
+        padding: var(--spacing-lg);
+    }
+    
+    /* Section spacing */
+    .about-section {
+        margin-top: var(--spacing-xl);
+        padding: var(--spacing-xl) 5%;
+    }
+    
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .section-lg {
+        padding: var(--spacing-xxl) 0;
+    }
+    
+    /* Grid adjustments */
+    .exp {
+        grid-template-columns: 1fr;
+        margin-top: var(--spacing-xl);
+        padding: var(--spacing-xl) 5%;
+    }
+    
+    .internship-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .grid-cols-2,
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Typography adjustments */
+    .quiz-form {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .question-group {
+        padding: var(--spacing-md);
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    /* Button adjustments */
+    .btn-lg {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 1.1rem;
+        min-width: 150px;
+    }
+}
+
+/* Mobile and below (480px) */
+@media (max-width: 480px) {
+    /* Layout adjustments */
+    .centered {
+        width: 95%;
+        padding: var(--spacing-md);
+    }
+    
+    /* Profile adjustments */
+    .pfp {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .pfpLink {
+        width: 110px;
+        height: 110px;
+    }
+    
+    /* Button adjustments */
+    .interntext {
+        font-size: 1rem;
+        padding: var(--spacing-md);
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: var(--spacing-sm) var(--spacing-md);
+        min-width: 120px;
+    }
+    
+    /* Header adjustments */
+    header {
+        padding: var(--spacing-sm) 3%;
+    }
+    
+    .logo a {
+        font-size: 1.5rem;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    /* Form adjustments */
+    .quiz-form {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .form-control,
+    .form-select,
+    .quiz-select {
+        font-size: 1rem;
+        padding: var(--spacing-sm);
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* Typography adjustments */
+    .toptext2 {
+        padding: var(--spacing-md);
+        font-size: 1rem;
+    }
+    
+    /* Spacing adjustments */
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .exp {
+        padding: var(--spacing-lg) 3%;
+    }
+    
+    .about-section,
+    .internships-section {
+        padding: var(--spacing-lg) 3%;
+    }
+}
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .split {
+        border-radius: 0 0 30px 30px;
+    }
+    
+    .centered {
+        border-radius: 30px;
+        padding: var(--spacing-xxl);
+    }
+    
+    .quiz-form {
+        max-width: 900px;
+    }
+    
+    .experts {
+        padding: var(--spacing-xxl);
+    }
+    
+    .pfp {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .pfpLink {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Print styles */
+@media print {
+    header,
+    .menu,
+    .btn,
+    .submit-btn,
+    .interntext {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .split {
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        background: white !important;
+        border: none !important;
+    }
+    
+    .centered {
+        position: static !important;
+        transform: none !important;
+        background: white !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .about-section,
+    .internships-section {
+        background: white !important;
+    }
+    
+    h1, h2, h3 {
+        color: black !important;
+    }
+    
+    .toptext,
+    .toptext2 {
+        color: black !important;
+        background: white !important;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000080;
+        --secondary-color: #8b008b;
+        --text-dark: #000000;
+        --text-light: #ffffff;
+        --background-light: #ffffff;
+    }
+    
+    .btn,
+    .submit-btn {
+        border: 2px solid currentColor;
+    }
+    
+    .form-control,
+    .form-select,
+    .quiz-select {
+        border: 2px solid currentColor;
+    }
+}
